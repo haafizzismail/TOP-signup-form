@@ -7,6 +7,10 @@
     --logo-white: white;
     --faded-white: rgb(180, 180, 180);
     --transparent-black: rgba(0, 0, 0, 0.3);
+
+    --logo-fs: 2.5rem;
+
+    --main-padding: 2rem;
 }
 
 * {
@@ -17,6 +21,8 @@
 
 body {
     display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    background-color: rgb(233, 233, 233);
 }
 
 aside {
@@ -27,6 +33,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
 }
 
 .logo-container {
@@ -45,7 +52,7 @@ aside {
 
 .logo-container > span {
     font-family: logo-font, sans-serif;
-    font-size: 3.5rem;
+    font-size: var(--logo-fs);
     color: var(--logo-white);
 }
 
@@ -58,4 +65,26 @@ aside {
 
 .img-credit > a {
     color: var(--faded-white);
+}
+
+main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    padding: var(--main-padding);
+    font-weight: 600;
+    line-height: 1.3rem;
+}
+
+.description > p:nth-child(2) {
+    margin-top: 1rem;
+}
+
+form > div {
+    background-color: white;
+    padding: 0.8rem var(--main-padding); 
 }
