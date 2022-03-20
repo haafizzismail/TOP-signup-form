@@ -1,0 +1,61 @@
+@font-face {
+    font-family: logo-font;
+    src: url(./font/RussoOne-Regular.ttf);
+}
+
+:root {
+    --logo-white: white;
+    --faded-white: rgb(180, 180, 180);
+    --transparent-black: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+aside {
+    background-image: url(./image/robin-van-geenen-lambo.jpg);
+    background-size: cover;
+    width: 700px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--transparent-black);
+    margin-top: calc(100vh / 6);
+}
+
+.logo {
+    width: 70px;
+}
+
+.logo-container > span {
+    font-family: logo-font, sans-serif;
+    font-size: 3.5rem;
+    color: var(--logo-white);
+}
+
+.img-credit {
+    color: var(--faded-white);
+    text-align: right;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.img-credit > a {
+    color: var(--faded-white);
+}
