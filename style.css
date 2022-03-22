@@ -146,11 +146,20 @@ input {
     width: 14rem;
     border: 1px solid rgb(212, 212, 212);
     border-radius: 5px;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
 }
 
 input:focus {
     box-shadow: 2px 2px 5px 2px rgb(184, 184, 184);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error + span {
+    color: red;
+    font-size: 0.6rem;
 }
 
 @media (max-width: 950px) {

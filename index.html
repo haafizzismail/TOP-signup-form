@@ -54,11 +54,13 @@
                 <div class="form-row">
                     <div>
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="pwd">
+                        <input type="password" id="pwd" name="pwd" class="error" required
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                        <span>* Passwords do not match.</span>
                     </div>
                     <div>
-                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-pwd" id="confirm-pwd">
+                        <label for=" confirm-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-pwd" id="confirm-pwd" class="error">
                     </div>
                 </div>
             </div>
